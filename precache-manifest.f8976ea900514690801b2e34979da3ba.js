@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "b6498f21d464e57788d5",
-    "url": "/HangMan-Game/static/css/main.11ef121c.chunk.css"
+    "revision": "e30bc617a32462c7304a",
+    "url": "/HangMan-Game/static/css/main.41603a7f.chunk.css"
   },
   {
-    "revision": "b6498f21d464e57788d5",
+    "revision": "e30bc617a32462c7304a",
     "url": "/HangMan-Game/static/js/main.5b682bfd.chunk.js"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/HangMan-Game/static/js/2.36a6cd5b.chunk.js"
   },
   {
-    "revision": "69cf5cc165a48abf413a3147a593c8dd",
+    "revision": "ee8f49e2704d80eb81c8396b52460962",
     "url": "/HangMan-Game/index.html"
   }
 ];
