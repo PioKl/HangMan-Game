@@ -1,0 +1,34 @@
+@import "./App.scss";
+
+#intro {
+    height: 100vh;
+    border: 20px solid black;
+}
+
+.intro-heading {
+    &--h1 {
+        @include fSCalc(25px, .96vw);
+    }
+
+    &--h2 {
+        @include fSCalc(20px, .96vw);
+    }
+}
+
+.intro-start {
+    display: flex;
+    justify-content: center;
+
+    .btn-start {
+        padding: calc(60px + 3.96vw);
+        @include fSCalc(20px, .96vw);
+        border-radius: 50%;
+    }
+}
+
+.intro-whoMade {
+    &--h2 {
+        @include fSCalc(10px, .76vw);
+    }
+
+}

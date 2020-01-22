@@ -1,0 +1,29 @@
+@import "./App.scss";
+
+$bootstrapRed: #dc3545;
+
+.btn-keyBoard {
+    margin: 1px;
+    border-radius: 5%;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0px;
+}
+
+.btn-keyBoard:disabled {
+    background-color: $bootstrapRed;
+    border-color: $bootstrapRed;
+}
+
+@media only screen and (min-width : 768px) {
+    .btn-keyBoard {
+        width: calc(20px + 2vw);
+        height: calc(20px + 2vw);
+        @include fSCalc(10px, .70vw);
+        /*         width: calc(20px + 2vw);
+        height: calc(20px + 2vw);
+        @include fSCalc(10px, .70vw); */
+        padding: 0px;
+    }
+}

@@ -1,0 +1,73 @@
+@import "./App.scss";
+
+.pointsResultListItem {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.pointsResultItem {
+    padding-bottom: 15px;
+    @include fSCalc(9px, .80vw)
+}
+
+.unknownWord,
+.knownWord {
+    @include fSCalc(14px, .50vw);
+    letter-spacing: 5px;
+    white-space: nowrap;
+}
+
+.pointsOverallNumber {
+    color: green;
+}
+
+.pointsNumber {
+    color: lightgreen;
+}
+
+.attemptsNumber {
+    color: red;
+}
+
+.btn-restart {
+    position: absolute;
+    top: 100%;
+    left: -90%;
+    z-index: 1;
+    width: 180%;
+}
+
+@media only screen and (min-width : 768px) {
+    #result {
+        padding: 100px 0 30px 0;
+    }
+
+    #pointsResult {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .pointsResultListItem {
+        text-align: left;
+    }
+
+    .unknownWord,
+    .knownWord,
+    .guess {
+        @include fSCalc(18px, .96vw);
+    }
+
+    .btn-restart {
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -25%);
+        padding: calc(10px + 3.96vw);
+        @include fSCalc(20px, .96vw);
+        z-index: 1;
+        width: auto;
+    }
+}

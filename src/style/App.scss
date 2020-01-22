@@ -1,0 +1,56 @@
+//font-size: calc
+@mixin fSCalc($pixels, $viewPort) {
+  font-size: calc(#{$pixels} + #{$viewPort});
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: auto;
+  background-color: black;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+#result {
+  padding-top: 50px;
+  margin: 0px; //bo row z bootstrapa nadaje -15px
+}
+
+#keyboard {
+  border: 5px solid grey;
+  background-color: grey;
+  margin-top: auto; //to spowoduje mi przesuniecie klawiatury na sam dol
+}
+
+.restartPanel {
+  display: none;
+}
+
+@media only screen and (min-width : 768px) {
+
+  .App {
+    min-height: 0vh !important;
+  }
+
+  #result {
+    margin: 0 -15px 0 -15px; //przywracam -15px
+  }
+
+  #keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex: 0; //jesli uzywam bootstrapa to przy tworzeniu klawiatury musialem tego uzyc, inaczej duze przerwy pomiedzy kolumnami mialbym
+    border-radius: 10px;
+  }
+
+  .restartPanel {
+    display: block;
+  }
+}
