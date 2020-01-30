@@ -24,17 +24,23 @@ $bootstrapBlue: #007bff;
         padding: calc(60px + 3.96vw);
         @include fSCalc(20px, .96vw);
         border-radius: 50%;
-        box-shadow: inset 0px -10px 0px 10px grey;
+        box-shadow: inset 0px -12px 0px 10px grey;
         border-left-color: grey;
         border-right-color: grey;
         border-bottom-color: grey;
 
-        &:hover {
-            box-shadow: 0px 0px;
-            border-left-color: $bootstrapBlue;
-            border-right-color: $bootstrapBlue;
-            border-bottom-color: $bootstrapBlue;
+        &:hover,
+        &:focus {
+            box-shadow: inset 0px 0px 0px 20px grey;
+            border: 1px solid black;
         }
+
+
+        &:active:focus {
+            box-shadow: inset 0px 0px 0px 40px grey !important;
+            border: 1px solid black;
+        }
+
     }
 }
 
