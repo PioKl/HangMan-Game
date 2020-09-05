@@ -1,5 +1,7 @@
 LINK: https://piokl.github.io/HangMan-Game/
 
+Gra „wisielec”, która polega na odgadnięciu nazwy zwierzęcia. Użytkownik ma do wyboru klawiaturę, która pokazuje jego prawidłowe, jak i złe wybory (odpowiednio kolor zielony i czerwony). W trakcie gry zliczane są punkty, pięć złych wyborów oznacza przegraną, a każdy zły wybór do dodatkowy element rysunku "wisielca". 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
